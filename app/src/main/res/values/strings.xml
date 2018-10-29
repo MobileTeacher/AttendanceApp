@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AttendanceApp</string>
+    <string name="class_name">Nome da disciplina</string>
+    <string name="date_text">Data de hoje</string>
+    <string name="checkin_text">Entrada:</string>
+    <string name="undefined_time">-------</string>
+    <string name="checkout_text">Saída:</string>
+    <string name="checkin_button_text">Check in</string>
+    <string name="checkout_button_text">Check out</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
