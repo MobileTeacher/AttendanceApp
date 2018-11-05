@@ -4,9 +4,9 @@ public class Subject {
     private String name;
     private String professor;
     private String day;
-    private double attendanceRate;
+    private float attendanceRate;
 
-    public Subject(String name, String professor, String day, double attendanceRate) {
+    public Subject(String name, String professor, String day, float attendanceRate) {
         this.name = name;
         this.professor = professor;
         this.day = day;
@@ -37,11 +37,11 @@ public class Subject {
         this.day = day;
     }
 
-    public double getAttendanceRate() {
+    public float getAttendanceRate() {
         return attendanceRate;
     }
 
-    public void setAttendanceRate(double attendanceRate) {
+    public void setAttendanceRate(float attendanceRate) {
         this.attendanceRate = attendanceRate;
     }
 }
