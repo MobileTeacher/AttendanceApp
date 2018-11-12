@@ -73,4 +73,11 @@ public class SubjectAdapter extends RecyclerView.Adapter {
         }
     }
 
+    @Override
+    public int getItemViewType(int position) {
+        if (position == 0){
+
+        }
+        return super.getItemViewType(position);
+    }
 }

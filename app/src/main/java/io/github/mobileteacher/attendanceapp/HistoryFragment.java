@@ -3,6 +3,7 @@ package io.github.mobileteacher.attendanceapp;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -39,9 +40,12 @@ public class HistoryFragment extends Fragment {
         subjectsList.setAdapter(adapter);
 
         RecyclerView.LayoutManager layoutManager =
-                //new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false);
-                new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL);
+                new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false);
+                //new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL);
         subjectsList.setLayoutManager(layoutManager);
+        subjectsList.addItemDecoration(
+                        new DividerItemDecoration(
+                        getContext(), DividerItemDecoration.VERTICAL));
 
         return root;
     }
