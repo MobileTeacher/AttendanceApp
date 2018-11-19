@@ -7,7 +7,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 public class AttendancePagerAdapter extends FragmentPagerAdapter {
 
-    int numberOfFragments = 2;
+    int numberOfFragments = 3;
 
     public AttendancePagerAdapter(FragmentManager fm) {
         super(fm);
@@ -19,6 +19,8 @@ public class AttendancePagerAdapter extends FragmentPagerAdapter {
             case 0:
                 return new RegisterAttendanceFragment();
             case 1:
+                return new SubjectsListFragment();
+            case 2:
                 return new HistoryFragment();
             default: return new RegisterAttendanceFragment();
         }
@@ -36,6 +38,8 @@ public class AttendancePagerAdapter extends FragmentPagerAdapter {
             case 0:
                 return "Hoje";
             case 1:
+                return "Disiciplinas";
+            case 2:
                 return "Histórico";
             default: return "XABU";
         }
